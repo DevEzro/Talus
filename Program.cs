@@ -1,7 +1,7 @@
 ﻿using Avalonia;
 using System;
 
-namespace Trainminal;
+namespace Talus;
 
 class Program
 {

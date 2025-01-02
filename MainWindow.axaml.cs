@@ -2,7 +2,7 @@ using Avalonia.Controls;
 using Avalonia.Input;
 using System.Diagnostics;
 
-namespace Trainminal;
+namespace Talus;
 
 public partial class MainWindow : Window
 {

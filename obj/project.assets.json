@@ -1431,11 +1431,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\DevEzro\\Documents\\Propio\\Otros\\Trainminal\\Trainminal.csproj",
-      "projectName": "Trainminal",
-      "projectPath": "C:\\Users\\DevEzro\\Documents\\Propio\\Otros\\Trainminal\\Trainminal.csproj",
+      "projectUniqueName": "C:\\Users\\DevEzro\\Documents\\Propio\\Otros\\Talus\\Talus.csproj",
+      "projectName": "Talus",
+      "projectPath": "C:\\Users\\DevEzro\\Documents\\Propio\\Otros\\Talus\\Talus.csproj",
       "packagesPath": "C:\\Users\\DevEzro\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\DevEzro\\Documents\\Propio\\Otros\\Trainminal\\obj\\",
+      "outputPath": "C:\\Users\\DevEzro\\Documents\\Propio\\Otros\\Talus\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\DevEzro\\AppData\\Roaming\\NuGet\\NuGet.Config"

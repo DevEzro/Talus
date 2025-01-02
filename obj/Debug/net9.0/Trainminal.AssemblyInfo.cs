@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Trainminal")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c32f957496862eec817f73701d36fc028be40e64")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f89124d9685fe0106d885cb33f0e2ca647a119c0")]
 [assembly: System.Reflection.AssemblyProductAttribute("Trainminal")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Trainminal")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
