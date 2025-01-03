@@ -10,12 +10,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("Trainminal")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("Talus")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f89124d9685fe0106d885cb33f0e2ca647a119c0")]
-[assembly: System.Reflection.AssemblyProductAttribute("Trainminal")]
-[assembly: System.Reflection.AssemblyTitleAttribute("Trainminal")]
+[assembly: System.Reflection.AssemblyProductAttribute("Talus")]
+[assembly: System.Reflection.AssemblyTitleAttribute("Talus")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 
 // Generado por la clase WriteCodeFragment de MSBuild.
