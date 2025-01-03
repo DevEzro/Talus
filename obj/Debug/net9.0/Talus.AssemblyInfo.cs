@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Talus")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7df24eae0ed754bf913102dbd49f6fa11b86d98e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+29c7da8cbff80db6f35fb95d705077beba68e682")]
 [assembly: System.Reflection.AssemblyProductAttribute("Talus")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Talus")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
