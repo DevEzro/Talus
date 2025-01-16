@@ -1,9 +1,12 @@
-# TALUS TERMINAL
+# TALUS TERMINAL 🔜 Coming soon
 
-#### Coming soon
+##⚠️ Actual status:
+- Ugly UI
+- No shortcuts avaliable
+- Simple commands working
 
-## RUN Avalonia required
-
-`dotnet clean`
-`dotnet build`
-`dotnet run`
+## ▶️ RUN 
+-❗ Avalonia required
+- `dotnet clean`
+- `dotnet build`
+- `dotnet run`
