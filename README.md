@@ -6,7 +6,7 @@
 - Simple commands working
 
 ## ▶️RUN 
--❗ Avalonia required
+### ❗ Avalonia required
 - `dotnet clean`
 - `dotnet build`
 - `dotnet run`
