@@ -3,7 +3,7 @@
 ![alt text](talus.png)
 >[!CAUTION]
 For educational purposes only <br>
-I do not get responsable of any damage this tool can triger
+I do not get responsable of any damage this tool can trigger
 
 >[!WARNING]
 FOR YOUR WELL, DO NOT USE REAL INFO TO AVOID POSSIBLE ATACKS
