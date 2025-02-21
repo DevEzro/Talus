@@ -10,3 +10,9 @@ FOR YOUR WELL, DO NOT USE REAL INFO TO AVOID POSSIBLE ATACKS
 
 ## USAGE
 `python talus.py`
+
+# To do
+- Check characters error -> ¿
+- Compare introduced data with data type
+- Add file path
+- Refactor GUI
