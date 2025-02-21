@@ -1,6 +1,6 @@
 # TALUS - WORDLIST GENERATOR (in progress)
 
-![alt text](talus.png)
+![alt text](images/talus.png)
 >[!CAUTION]
 For educational purposes only <br>
 I do not get responsable of any damage this tool can triger
