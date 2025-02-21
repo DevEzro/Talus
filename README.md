@@ -1,4 +1,4 @@
-# TALUS - WORDLIST GENERATOR
+# TALUS - WORDLIST GENERATOR (in progress)
 
 ![alt text](talus.png)
 >[!CAUTION]
