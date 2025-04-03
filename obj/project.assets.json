@@ -1426,19 +1426,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\DevEzro\\.nuget\\packages\\": {}
+    "C:\\Users\\David\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\DevEzro\\Documents\\Dev\\Propio\\Otros\\Talus\\Talus.csproj",
+      "projectUniqueName": "C:\\Users\\David\\Documents\\DEV\\Propio\\Repositorios\\Talus\\Talus.csproj",
       "projectName": "Talus",
-      "projectPath": "C:\\Users\\DevEzro\\Documents\\Dev\\Propio\\Otros\\Talus\\Talus.csproj",
-      "packagesPath": "C:\\Users\\DevEzro\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\DevEzro\\Documents\\Dev\\Propio\\Otros\\Talus\\obj\\",
+      "projectPath": "C:\\Users\\David\\Documents\\DEV\\Propio\\Repositorios\\Talus\\Talus.csproj",
+      "packagesPath": "C:\\Users\\David\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\David\\Documents\\DEV\\Propio\\Repositorios\\Talus\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\DevEzro\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\David\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net9.0"
@@ -1505,7 +1505,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.103/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
