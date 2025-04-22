@@ -104,7 +104,7 @@ def ops(option):
         print_menu()
     elif option == "3":
         clear_screen()
-        print("In profress...")
+        print("In progress...")
         print_menu()
 
 def print_menu():
