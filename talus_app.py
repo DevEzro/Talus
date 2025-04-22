@@ -1,9 +1,8 @@
-import os, time, git
+import os, time, subprocess
 from colorama import Fore
 
 PATH = os.path.dirname(os.path.abspath(__file__))
 wordlist = os.path.join(PATH, "wordlist.txt")
-REPO_PATH = os.path.join(PATH, ".git")
 
 def clear_screen():
     os.system('cls' if os.name == 'nt' else 'clear')
@@ -94,8 +93,30 @@ def permutations():
     ''')
 
 def check_updates():
-    print("In progress...")
+    #print("In progress...")
+    try:
+        # Obtiene información del estado actual del repositorio
+        subprocess.run(["git", "fetch", "origin"], check=True)
+        
+        # Compara el HEAD local con el remoto
+        local = subprocess.check_output(["git", "rev-parse", "HEAD"]).strip()
+        remote = subprocess.check_output(["git", "rev-parse", "origin/main"]).strip()
+        
+        if local != remote:
+            print("⚠️  Hay una nueva actualización disponible.")
+            answer = input("Wanna install the update? (y/n): ").strip().lower()
+            if answer == "y":
+                # Opcionalmente preguntar o directamente actualizar
+                subprocess.run(["git", "pull", "origin", "main"], check=True)
+                print("✅ Repositorio actualizado.")
+            else:
+                print("❌ Actualización cancelada.")
+        else:
+            print("🆗 No hay actualizaciones disponibles.")
+    except subprocess.CalledProcessError as e:
+        print(f"❌ Error al comprobar actualizaciones: {e}")
 
+    
 def ops(option):
     clear_screen() # Generate wordlist
     if option == "1":
