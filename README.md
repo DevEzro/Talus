@@ -46,5 +46,5 @@ This tool offers various options:
 |---|---------|
 |✅|**Generate wordlist**: create the wordlist with the data provided by the user.|
 |✅|**About Talus**: shows this information.|
-|❌|**Check updates**: search for a new GitHub repository version, allowing the user to decide whether to update or not.|
+|🧪|**Check updates**: search for a new GitHub repository version, allowing the user to decide whether to update or not.|
 |✅|**Exit Talus**: close Talus.|
