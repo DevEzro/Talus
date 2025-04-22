@@ -92,7 +92,7 @@ def permutations():
         [+] {fw6}
     ''')
 
-def check_updates():
+def check_updates(): # 3. CHECK UPDATES
     #print("In progress...")
     try:
         # Obtiene información del estado actual del repositorio
@@ -103,18 +103,18 @@ def check_updates():
         remote = subprocess.check_output(["git", "rev-parse", "origin/main"]).strip()
         
         if local != remote:
-            print("⭐ New available update.")
+            print(f"{Fore.CYAN}⭐ New available update.{Fore.RESET}")
             answer = input("Do you want to install the update? (y/n): ").strip().lower()
             if answer == "y":
                 # Opcionalmente preguntar o directamente actualizar
                 subprocess.run(["git", "pull", "origin", "main"], check=True)
-                print("✅ Repositorio actualizado.")
+                print(f"{Fore.GREEN}✅ Repositorio actualizado.{Fore.RESET}")
             else:
-                print("❌ Actualización cancelada.")
+                print(f"{Fore.RED}❌ Actualización cancelada.{Fore.RESET}")
         else:
-            print("🆗 No hay actualizaciones disponibles.")
+            print(f"{Fore.CYAN}🆗 No hay actualizaciones disponibles.{Fore.RESET}")
     except subprocess.CalledProcessError as e:
-        print(f"❌ Error al comprobar actualizaciones: {e}")
+        print(f"{Fore.RED}❌ Error al comprobar actualizaciones: {e}{Fore.RESET}")
 
     
 def ops(option):
