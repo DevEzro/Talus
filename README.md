@@ -48,4 +48,5 @@ This tool offers various options:
 |🧪|**Check updates**: search for a new GitHub repository version, allowing the user to decide whether to update or not.|
 |✅|**Exit Talus**: close Talus.|
 
->[!IMPORTANT] You may need to install a python virtual enviroment in the root path. **IT MUST BE NAMED venv**. You will need it to install the colorama package (inside `requierements.txt` file)
+>[!IMPORTANT] 
+You may need to install a python virtual enviroment in the root path. **IT MUST BE NAMED venv**. You will need it to install the colorama package (inside `requierements.txt` file)
