@@ -19,7 +19,6 @@ def title():
            @Repository: github.com/DevEzro/Talus       
     ''')
 
-
 def art():
     print('''
                     %%%*                                       
@@ -45,6 +44,7 @@ def art():
    %#*+*****+*####++*                                       
       ##%%                                                  
     ''')
+
 
 def permutations(): # 1. GENERATE WORDLIST
     w1 = input("[-] Enter the first data, like a name: ")
