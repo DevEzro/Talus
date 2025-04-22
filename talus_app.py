@@ -1,14 +1,15 @@
-import os, time
+import os, time, git
 from colorama import Fore
 
 PATH = os.path.dirname(os.path.abspath(__file__))
 wordlist = os.path.join(PATH, "wordlist.txt")
+REPO_PATH = os.path.join(PATH, ".git")
 
 def clear_screen():
     os.system('cls' if os.name == 'nt' else 'clear')
 
 def title():
-    print('''
+    print(r'''
                 _________    __    __  _______
                /_  __/   |  / /   / / / / ___/
                 / / / /| | / /   / / / /\__ \ 
@@ -59,42 +60,48 @@ def art():
       ##%%                                                  
     ''')
 
+def permutations():
+    w1 = input("[-] Enter the first data, like a name: ")
+    w2 = input("[-] Enter the second data, like a date: ")
+    w3 = input("[-] Enter the third data, like special characters: ")
+    fw1 = w1+w2+w3
+    fw2 = w1+w3+w2
+    fw3 = w2+w1+w3
+    fw4 = w2+w3+w1
+    fw5 = w3+w1+w2
+    fw6 = w3+w2+w1
+    with open(wordlist, "w") as f:
+        f.write(fw1 + "\n")
+        f.write(fw2 + "\n")
+        f.write(fw3 + "\n")
+        f.write(fw4 + "\n")
+        f.write(fw5 + "\n")
+        f.write(fw6 + "\n")
+    print(f'''
+        {Fore.GREEN}
+        [+] Wordlist created successfully!
+        {Fore.RESET}
+    ''')
+    print("These are the permutations of the data you introduced:")
+    print(f'''
+        {Fore.GREEN}
+        [+] {fw1}
+        [+] {fw2}
+        [+] {fw3}
+        [+] {fw4}
+        [+] {fw5}
+        [+] {fw6}
+    ''')
+
+def check_updates():
+    print("In progress...")
+
 def ops(option):
-    clear_screen()
+    clear_screen() # Generate wordlist
     if option == "1":
-        w1 = input("[-] Enter the first data, like a name: ")
-        w2 = input("[-] Enter the second data, like a date: ")
-        w3 = input("[-] Enter the third data, like special characters: ")
-        fw1 = w1+w2+w3
-        fw2 = w1+w3+w2
-        fw3 = w2+w1+w3
-        fw4 = w2+w3+w1
-        fw5 = w3+w1+w2
-        fw6 = w3+w2+w1
-        with open(wordlist, "w") as f:
-            f.write(fw1 + "\n")
-            f.write(fw2 + "\n")
-            f.write(fw3 + "\n")
-            f.write(fw4 + "\n")
-            f.write(fw5 + "\n")
-            f.write(fw6 + "\n")
-        print(f'''
-            {Fore.GREEN}
-            [+] Wordlist created successfully!
-            {Fore.RESET}
-        ''')
-        print("These are the permutations of the data you introduced:")
-        print(f'''
-            {Fore.GREEN}
-            [+] {fw1}
-            [+] {fw2}
-            [+] {fw3}
-            [+] {fw4}
-            [+] {fw5}
-            [+] {fw6}
-        ''')
+        permutations()
         print_menu()
-    elif option == "2":
+    elif option == "2": # Info
         clear_screen()
         title()
         time.sleep(0.5)
@@ -102,9 +109,9 @@ def ops(option):
         time.sleep(0.5)
         info()
         print_menu()
-    elif option == "3":
+    elif option == "3": # Check updates
         clear_screen()
-        print("In progress...")
+        check_updates()
         print_menu()
 
 def print_menu():
@@ -117,7 +124,7 @@ def print_menu():
  ****************************
     ''' + Fore.RESET)
     option = input(Fore.YELLOW + "[-] Select an option above: " + Fore.RESET)
-    if option == "0":
+    if option == "0": # Exit
         clear_screen()
         print("\nThanks for using Talus!\n")
         exit()
