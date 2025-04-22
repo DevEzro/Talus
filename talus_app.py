@@ -103,8 +103,8 @@ def check_updates():
         remote = subprocess.check_output(["git", "rev-parse", "origin/main"]).strip()
         
         if local != remote:
-            print("⚠️  Hay una nueva actualización disponible.")
-            answer = input("Wanna install the update? (y/n): ").strip().lower()
+            print("⭐ New available update.")
+            answer = input("Do you want to install the update? (y/n): ").strip().lower()
             if answer == "y":
                 # Opcionalmente preguntar o directamente actualizar
                 subprocess.run(["git", "pull", "origin", "main"], check=True)
