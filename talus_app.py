@@ -125,7 +125,7 @@ def print_menu(): # 0. EXIT TALUS
     option = input(Fore.YELLOW + "[-] Select an option above: " + Fore.RESET)
     if option == "0": # Exit
         clear_screen()
-        print("\nThanks for using Talus!\n")
+        print("\n😊 Thanks for using Talus!\n")
         exit()
     elif option >= "1" and option <= "3":
         ops(option)
