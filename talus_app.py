@@ -19,20 +19,7 @@ def title():
            @Repository: github.com/DevEzro/Talus       
     ''')
 
-def info():
-    print(f'''
-        Talus is a wordlist generator that allows the user to create his own wordlists, based on
-        asked info text by the him. Once the info is introduced, this tool creates a file that contains
-        three permutations of this data, changing the order of the info. introduced.
-        {time.sleep(0.5)}
-            
-        This tool offers various options:
-        1. Generate wordlist: create the wordlist with the data provided by the user.
-        2. About Talus: shows this information.
-        3. Check updates: search for a new GitHub repository version, allowing the user to decide whether to update or not.
-        4. Exit Talus: close Talus.
-    ''')
-    
+
 def art():
     print('''
                     %%%*                                       
@@ -59,7 +46,7 @@ def art():
       ##%%                                                  
     ''')
 
-def permutations():
+def permutations(): # 1. GENERATE WORDLIST
     w1 = input("[-] Enter the first data, like a name: ")
     w2 = input("[-] Enter the second data, like a date: ")
     w3 = input("[-] Enter the third data, like special characters: ")
@@ -92,13 +79,24 @@ def permutations():
         [+] {fw6}
     ''')
 
+def info(): # 2. ABOUT TALUS
+    print(f'''
+        Talus is a wordlist generator that allows the user to create his own wordlists, based on
+        asked info text by the him. Once the info is introduced, this tool creates a file that contains
+        three permutations of this data, changing the order of the info. introduced.
+        {time.sleep(0.5)}
+            
+        This tool offers various options:
+        1. Generate wordlist: create the wordlist with the data provided by the user.
+        2. About Talus: shows this information.
+        3. Check updates: search for a new GitHub repository version, allowing the user to decide whether to update or not.
+        4. Exit Talus: close Talus.
+    ''')
+    
 def check_updates(): # 3. CHECK UPDATES
-    #print("In progress...")
     try:
-        # Obtiene información del estado actual del repositorio
         subprocess.run(["git", "fetch", "origin"], check=True)
         
-        # Compara el HEAD local con el remoto
         local = subprocess.check_output(["git", "rev-parse", "HEAD"]).strip()
         remote = subprocess.check_output(["git", "rev-parse", "origin/main"]).strip()
         
@@ -106,7 +104,6 @@ def check_updates(): # 3. CHECK UPDATES
             print(f"{Fore.CYAN}⭐ New available update.{Fore.RESET}")
             answer = input("Do you want to install the update? (y/n): ").strip().lower()
             if answer == "y":
-                # Opcionalmente preguntar o directamente actualizar
                 subprocess.run(["git", "pull", "origin", "main"], check=True)
                 print(f"{Fore.GREEN}✅ Repositorio actualizado.{Fore.RESET}")
             else:
@@ -116,7 +113,6 @@ def check_updates(): # 3. CHECK UPDATES
     except subprocess.CalledProcessError as e:
         print(f"{Fore.RED}❌ Error al comprobar actualizaciones: {e}{Fore.RESET}")
 
-    
 def ops(option):
     clear_screen() # Generate wordlist
     if option == "1":
@@ -135,7 +131,7 @@ def ops(option):
         check_updates()
         print_menu()
 
-def print_menu():
+def print_menu(): # 0. EXIT TALUS
     print(Fore.CYAN +'''
  ****************************      
  *   [1] Generate wordlist  *
@@ -151,7 +147,8 @@ def print_menu():
         exit()
     else:
         ops(option)
-    
+
+
 title()
 time.sleep(0.5)
 art()
