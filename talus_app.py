@@ -113,6 +113,23 @@ def check_updates(): # 3. CHECK UPDATES
     except subprocess.CalledProcessError as e:
         print(f"{Fore.RED}❌ Error al comprobar actualizaciones: {e}{Fore.RESET}")
 
+def print_menu(): # 0. EXIT TALUS
+    print(Fore.CYAN +'''
+ ****************************      
+ *   [1] Generate wordlist  *
+ *   [2] About Talus        *
+ *   [3] Check updates      *
+ *   [0] Exit Talus         *
+ ****************************
+    ''' + Fore.RESET)
+    option = input(Fore.YELLOW + "[-] Select an option above: " + Fore.RESET)
+    if option == "0": # Exit
+        clear_screen()
+        print("\nThanks for using Talus!\n")
+        exit()
+    else:
+        ops(option)
+
 def ops(option):
     clear_screen() # Generate wordlist
     if option == "1":
@@ -130,23 +147,6 @@ def ops(option):
         clear_screen()
         check_updates()
         print_menu()
-
-def print_menu(): # 0. EXIT TALUS
-    print(Fore.CYAN +'''
- ****************************      
- *   [1] Generate wordlist  *
- *   [2] About Talus        *
- *   [3] Check updates      *
- *   [0] Exit Talus         *
- ****************************
-    ''' + Fore.RESET)
-    option = input(Fore.YELLOW + "[-] Select an option above: " + Fore.RESET)
-    if option == "0": # Exit
-        clear_screen()
-        print("\nThanks for using Talus!\n")
-        exit()
-    else:
-        ops(option)
 
 
 title()
