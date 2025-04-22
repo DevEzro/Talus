@@ -65,18 +65,18 @@ def permutations(): # 1. GENERATE WORDLIST
         f.write(fw6 + "\n")
     print(f'''
         {Fore.GREEN}
-        [+] Wordlist created successfully!
+        ✅ Wordlist created successfully!
         {Fore.RESET}
     ''')
     print("These are the permutations of the data you introduced:")
     print(f'''
         {Fore.GREEN}
-        [+] {fw1}
-        [+] {fw2}
-        [+] {fw3}
-        [+] {fw4}
-        [+] {fw5}
-        [+] {fw6}
+        ✅ {fw1}
+        ✅ {fw2}
+        ✅ {fw3}
+        ✅ {fw4}
+        ✅ {fw5}
+        ✅ {fw6}
     ''')
 
 def info(): # 2. ABOUT TALUS
@@ -127,9 +127,13 @@ def print_menu(): # 0. EXIT TALUS
         clear_screen()
         print("\nThanks for using Talus!\n")
         exit()
-    else:
+    elif option >= "1" and option <= "3":
         ops(option)
-
+    else:
+        print(f"{Fore.RED}\n❌ Invalid option.{Fore.RESET}")
+        print(f"{Fore.RED}⚠️  You must select an option between 0 and 3")
+        print_menu()
+        
 def ops(option):
     clear_screen() # Generate wordlist
     if option == "1":
