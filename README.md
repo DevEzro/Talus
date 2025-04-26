@@ -49,13 +49,13 @@ This tool offers various options:
 |**Exit Talus**: close Talus.|✅|
 
 Tested in:
-|SYSTEMS|STATUS|
-|---|---------|
-|**Windows**|✅|
-|**Linux**|⚠️ Update fails in Kali|
-|**Termux**|➖ Pending|
-|**MacOS**|➖ Pending|
-|**iOS**|➖ Pending|
+|SYSTEMS|STATUS|COMMENTS|
+|-------|------|---------|
+|**Windows**|✅|**CORRECT**|
+|**Linux**|⚠️| Update fails in Kali|
+|**Termux**|➖| Pending|
+|**MacOS**|➖| Pending|
+|**iOS**|➖| Pending|
 
 >[!IMPORTANT] 
 **I am not responsible for the use that the user gives to the tool and the consequences that this entails.**
