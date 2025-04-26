@@ -39,6 +39,7 @@ Talus is a wordlist generator that allows the user to create his own wordlists, 
 asked data to him. Once the info is provided, this tool creates a file that contains
 six permutations of this data, changing the order of the info. introduced (this will change in the future
 to make the wordlist more sofisticated).
+<br>
 
 This tool offers various options:
 |FEATURE|STATUS|
@@ -47,6 +48,7 @@ This tool offers various options:
 |**About Talus**: shows this information.|✅|
 |**Check updates**: search for a new GitHub repository version, allowing the user to decide whether to update or not.|🧪|
 |**Exit Talus**: close Talus.|✅|
+<br>
 
 Tested in:
 |SYSTEMS|STATUS|COMMENTS|
@@ -56,6 +58,7 @@ Tested in:
 |**Termux**|➖| Pending|
 |**MacOS**|➖| Pending|
 |**iOS**|➖| Pending|
+<br>
 
 >[!IMPORTANT] 
 **I am not responsible for the use that the user gives to the tool and the consequences that this entails.**
