@@ -34,7 +34,7 @@
       ##%%
 ```
 
-## WORDLIST GENERATOR 
+## WORDLIST GENERATOR
 Talus is a wordlist generator that allows the user to create his own wordlists, based on
 asked data to him. Once the info is provided, this tool creates a file that contains
 six permutations of this data, changing the order of the info. introduced (this will change in the future
