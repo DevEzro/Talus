@@ -49,4 +49,4 @@ This tool offers various options:
 |✅|**Exit Talus**: close Talus.|
 
 >[!IMPORTANT] 
-**I DO NOT GET RESPONSABLE OF USER PROPOUSES AND USAGE OF THIS TOOL. THIS IS ONLY FOR EDUCATIONAL REASONS.**
+**I am not responsible for the use that the user gives to the tool and the consequences that this entails.**
