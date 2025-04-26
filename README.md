@@ -41,12 +41,21 @@ six permutations of this data, changing the order of the info. introduced (this 
 to make the wordlist more sofisticated).
 
 This tool offers various options:
-|STATUS|FEATURE|
+|FEATURE|STATUS|
 |---|---------|
-|✅|**Generate wordlist**: create the wordlist with the data provided by the user.|
-|✅|**About Talus**: shows this information.|
-|🧪|**Check updates**: search for a new GitHub repository version, allowing the user to decide whether to update or not.|
-|✅|**Exit Talus**: close Talus.|
+|**Generate wordlist**: create the wordlist with the data provided by the user.|✅|
+|**About Talus**: shows this information.|✅|
+|**Check updates**: search for a new GitHub repository version, allowing the user to decide whether to update or not.|🧪|
+|**Exit Talus**: close Talus.|✅|
+
+Tested in:
+|SYSTEMS|STATUS|
+|---|---------|
+|**Windows**|✅|
+|**Linux**|⚠️ May fail in some distributions (Tested in: ❌ Kali, ✅ Ubuntu)|
+|**Termux**|➖|
+|**MacOS**|➖|
+|**iOS**|➖|
 
 >[!IMPORTANT] 
 **I am not responsible for the use that the user gives to the tool and the consequences that this entails.**
