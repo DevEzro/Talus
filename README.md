@@ -49,6 +49,4 @@ This tool offers various options:
 |✅|**Exit Talus**: close Talus.|
 
 >[!IMPORTANT] 
-You need to create a python virtual enviroment, so `colorama` package is requiered (you can add it with `pip install -r requirements.txt`). In case you want to fork this repo and use it with `git` and don't want to add your enviroment folder, ensure:
->1. To change inside `.gitgnore` file the `venv` value to your current enviroment name
->2. Or to have named your enviroment `venv`
+**I DO NOT GET RESPONSABLE OF USER PROPOUSES AND USAGE OF THIS TOOL. THIS IS ONLY FOR EDUCATIONAL REASONS.**
