@@ -52,10 +52,10 @@ Tested in:
 |SYSTEMS|STATUS|
 |---|---------|
 |**Windows**|✅|
-|**Linux**|⚠️ May fail in some distributions (Tested in: ❌ Kali, ✅ Ubuntu)|
-|**Termux**|➖|
-|**MacOS**|➖|
-|**iOS**|➖|
+|**Linux**|⚠️ Update fails in Kali|
+|**Termux**|➖ Pending|
+|**MacOS**|➖ Pending|
+|**iOS**|➖ Pending|
 
 >[!IMPORTANT] 
 **I am not responsible for the use that the user gives to the tool and the consequences that this entails.**
