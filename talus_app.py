@@ -50,6 +50,9 @@ def permutations(): # 1. GENERATE WORDLIST
     w1 = input("[-] Enter the first data, like a name: ")
     w2 = input("[-] Enter the second data, like a date: ")
     w3 = input("[-] Enter the third data, like special characters: ")
+    election = input("[-] Do you want to add random characters between data (y/n): ").strip().lower()
+    print(f"Election: {election}")
+    
     fw1 = w1+w2+w3
     fw2 = w1+w3+w2
     fw3 = w2+w1+w3
