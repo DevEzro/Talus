@@ -114,7 +114,7 @@ def check_updates(): # 3. CHECK UPDATES
         print(f"{Fore.RED}❌ Error al comprobar actualizaciones: {e}{Fore.RESET}")
 
 def print_menu(): # 0. EXIT TALUS
-    print(Fore.CYAN +'''
+    print(Fore.CYAN +''' 
  ****************************      
  *   [1] Generate wordlist  *
  *   [2] About Talus        *
