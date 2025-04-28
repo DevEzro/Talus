@@ -106,9 +106,10 @@ def check_updates(): # 3. CHECK UPDATES
         remote = subprocess.check_output(["git", "rev-parse", "origin/main"]).strip()
         
         if local != remote:
-            print(f"{Fore.CYAN}⭐ New available update.{Fore.RESET}")
-            answer = input("Do you want to install the update? (y/n): ").strip().lower()
+            print(f"{Fore.CYAN}⭐ New update available.{Fore.RESET}")
+            answer = input("⬇️ Do you want to install the update? (y/n): ").strip().lower()
             if answer == "y":
+                print(f"{Fore.CYAN}🔄 Updating Talus...{Fore.RESET}")
                 subprocess.run(
                     ["git", "pull", "origin", "main"], 
                     check=True,
