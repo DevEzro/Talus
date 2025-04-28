@@ -116,13 +116,13 @@ def check_updates(): # 3. CHECK UPDATES
                     stdout=subprocess.DEVNULL,
                     stderr=subprocess.DEVNULL
                 )
-                print(f"{Fore.GREEN}✅ Repositorio actualizado.{Fore.RESET}")
+                print(f"{Fore.GREEN}✅ Repository update sucessful.{Fore.RESET}")
             else:
-                print(f"{Fore.RED}❌ Actualización cancelada.{Fore.RESET}")
+                print(f"{Fore.RED}❌ Update has been canceled.{Fore.RESET}")
         else:
-            print(f"{Fore.CYAN}🆗 No hay actualizaciones disponibles.{Fore.RESET}")
+            print(f"{Fore.CYAN}🆗 No updates available.{Fore.RESET}")
     except subprocess.CalledProcessError as e:
-        print(f"{Fore.RED}❌ Error al comprobar actualizaciones: {e}{Fore.RESET}")
+        print(f"{Fore.RED}❌ Error while checking updates: {e}{Fore.RESET}")
 
 def print_menu(): # 0. EXIT TALUS
     print(Fore.CYAN +'''
