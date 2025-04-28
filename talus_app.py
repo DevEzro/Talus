@@ -95,7 +95,12 @@ def info(): # 2. ABOUT TALUS
     
 def check_updates(): # 3. CHECK UPDATES
     try:
-        subprocess.run(["git", "fetch", "origin"], check=True)
+        subprocess.run(
+            ["git", "fetch", "origin"], 
+            check=True, 
+            stdout=subprocess.DEVNULL,
+            stderr=subprocess.DEVNULL
+        )
         
         local = subprocess.check_output(["git", "rev-parse", "HEAD"]).strip()
         remote = subprocess.check_output(["git", "rev-parse", "origin/main"]).strip()
@@ -104,7 +109,12 @@ def check_updates(): # 3. CHECK UPDATES
             print(f"{Fore.CYAN}⭐ New available update.{Fore.RESET}")
             answer = input("Do you want to install the update? (y/n): ").strip().lower()
             if answer == "y":
-                subprocess.run(["git", "pull", "origin", "main"], check=True)
+                subprocess.run(
+                    ["git", "pull", "origin", "main"], 
+                    check=True,
+                    stdout=subprocess.DEVNULL,
+                    stderr=subprocess.DEVNULL
+                )
                 print(f"{Fore.GREEN}✅ Repositorio actualizado.{Fore.RESET}")
             else:
                 print(f"{Fore.RED}❌ Actualización cancelada.{Fore.RESET}")
