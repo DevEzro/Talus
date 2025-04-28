@@ -55,7 +55,7 @@ Tested in:
 |-------|------|---------|
 |**Windows**|✅|**CORRECT**|
 |**Linux**|⚠️| Update fails in Kali|
-|**Termux**|➖| Pending|
+|**Termux**|✅| Pending tests|
 |**MacOS**|➖| Pending|
 |**iOS**|➖| Pending|
 <br>
