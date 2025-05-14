@@ -2,7 +2,6 @@ import os, time, subprocess
 from colorama import Fore
 
 PATH = os.path.dirname(os.path.abspath(__file__))
-wordlist = os.path.join(PATH, "wordlist.txt")
 
 def clear_screen():
     os.system('cls' if os.name == 'nt' else 'clear')
@@ -47,6 +46,10 @@ def art():
 
 
 def permutations(): # 1. GENERATE WORDLIST
+    wordlist_name = input("[-] Enter the name of your '.txt' wordlist: ")
+    print(f"You named your wordlist '{wordlist_name}'")
+    wordlist = os.path.join(PATH, wordlist_name+".txt")
+    
     w1 = input("[-] Enter the first data, like a name: ")
     w2 = input("[-] Enter the second data, like a date: ")
     w3 = input("[-] Enter the third data, like special characters: ")
