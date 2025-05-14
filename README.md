@@ -50,6 +50,13 @@ This tool offers various options:
 |**Exit Talus**: close Talus.|✅|
 <br>
 
+## USAGE
+```
+git clone https://github.com/DevEzro/Talus
+cd Talus
+python3 talus_app.py
+```
+
 Tested in:
 |SYSTEMS|STATUS|COMMENTS|
 |-------|------|---------|
