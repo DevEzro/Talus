@@ -44,6 +44,8 @@ def art():
       ##%%                                                  
     ''')
 
+def despedida():
+    print("\n� Thanks for using Talus!\n")
 
 def permutations(): # 1. GENERATE WORDLIST
     wordlist_name = input("[-] Enter the name of your '.txt' wordlist: ")
@@ -139,7 +141,7 @@ def print_menu(): # 0. EXIT TALUS
     option = input(Fore.YELLOW + "[-] Select an option above: " + Fore.RESET)
     if option == "0": # Exit
         clear_screen()
-        print("\n😊 Thanks for using Talus!\n")
+        despedida()
         exit()
     elif option >= "1" and option <= "3":
         ops(option)
