@@ -86,9 +86,9 @@ def permutations(): # 1. GENERATE WORDLIST
 
 def info(): # 2. ABOUT TALUS
     print(f'''
-        Talus is a wordlist generator that allows the user to create his own wordlists, based on
-        asked info text by the him. Once the info is introduced, this tool creates a file that contains
-        three permutations of this data, changing the order of the info. introduced.
+        Talus is a wordlist generator that allows the user to create his own wordlists, based on info
+        that Talus asks to the user. Once the info is introduced, this tool creates a file that contains
+        three permutations of this data, changing the order of the info introduced.
         {time.sleep(0.5)}
             
         This tool offers various options:
