@@ -130,25 +130,35 @@ def check_updates(): # 3. CHECK UPDATES
         print(f"{Fore.RED}❌ Error while checking updates: {e}{Fore.RESET}")
 
 def print_menu(): # 0. EXIT TALUS
-    print(Fore.CYAN +'''
- ****************************      
- *   [1] Generate wordlist  *
- *   [2] About Talus        *
- *   [3] Check updates      *
- *   [0] Exit Talus         *
- ****************************
-    ''' + Fore.RESET)
-    option = input(Fore.YELLOW + "[-] Select an option above: " + Fore.RESET)
-    if option == "0": # Exit
+    try:
+        print(Fore.CYAN +'''
+    ****************************      
+    *   [1] Generate wordlist  *
+    *   [2] About Talus        *
+    *   [3] Check updates      *
+    *   [0] Exit Talus         *
+    ****************************
+        ''' + Fore.RESET)
+        option = input(Fore.YELLOW + "[-] Select an option above: " + Fore.RESET)
+        if option == "0": # Exit
+            clear_screen()
+            despedida()
+            exit()
+        elif option >= "1" and option <= "3":
+            ops(option)
+        else:
+            print(f"{Fore.RED}\n❌ Invalid option.{Fore.RESET}")
+            print(f"{Fore.RED}⚠️  You must select an option between 0 and 3")
+            print_menu()    
+    
+    except KeyboardInterrupt:
         clear_screen()
+        print("🚪 Exiting...")
         despedida()
-        exit()
-    elif option >= "1" and option <= "3":
-        ops(option)
-    else:
-        print(f"{Fore.RED}\n❌ Invalid option.{Fore.RESET}")
-        print(f"{Fore.RED}⚠️  You must select an option between 0 and 3")
-        print_menu()
+        exit(0)
+
+    
+
         
 def ops(option):
     clear_screen() # Generate wordlist
