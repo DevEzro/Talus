@@ -52,9 +52,9 @@ def permutations(): # 1. GENERATE WORDLIST
     print(f"You named your wordlist '{wordlist_name}'")
     wordlist = os.path.join(PATH, wordlist_name+".txt")
     
-    w1 = input("[-] Enter the first data, like a name: ")
-    w2 = input("[-] Enter the second data, like a date: ")
-    w3 = input("[-] Enter the third data, like special characters: ")
+    w1 = input("[-] Enter the first data (word, name, object, something): ")
+    w2 = input("[-] Enter the second data (numbers, date, age, time): ")
+    w3 = input("[-] Enter the third data (exta info, special characters, more words or numbers, whatever): ")
     fw1 = w1+w2+w3
     fw2 = w1+w3+w2
     fw3 = w2+w1+w3
