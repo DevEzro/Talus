@@ -43,7 +43,7 @@ to make the wordlist more sofisticated).
 <br>
 
 <details>
-  <summary>👀 break down to see a curiosity...</summary>
+  <summary>👀 Break down to see a curiosity...</summary>
   <p align="center">
     <b>Why the ASCII art?</b>
     <br>
