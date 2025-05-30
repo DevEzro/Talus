@@ -34,11 +34,28 @@
       ##%%
 ```
 
-## WORDLIST GENERATOR
+## WHAT IS TALUS
 **Talus** is a wordlist generator that allows the user to create his own wordlists, based on
 asked data to him. Once the info is provided, this tool creates a file that contains
 six permutations of this data, changing the order of the info. introduced (this will change in the future
 to make the wordlist more sofisticated).
+<br>
+<br>
+
+<details>
+  <summary>👀 break down to see a curiosity...</summary>
+  <p align="center">
+    <b>Why the ASCII art?</b>
+    <br>
+    It's related to the Talus monster that appears in both TLOZ: BOTW and TOTK. Due to wordlists being used most for brute force access, I thought Talus
+  is a funny representation of both brute and force applied in this type of attack.
+    <br>
+    <br>
+    <img src="https://www.zeldadungeon.net/wiki/images/2/28/Stone-talus.jpeg" width="200">
+  </p>
+</details>
+
+<br>
 <br>
 
 This tool offers various options:
