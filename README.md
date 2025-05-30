@@ -45,7 +45,7 @@ to make the wordlist more sofisticated).
 <details>
   <summary>👀 Break down to see a curiosity...</summary>
   <p align="center">
-    <b>Why the ASCII art?</b>
+    <b>Why Talus?</b>
     <br>
     It's related to the Talus monster that appears in both TLOZ: BOTW and TOTK. Due to wordlists being used most for brute force access, I thought Talus
   is a funny representation of both brute and force applied in this type of attack.
