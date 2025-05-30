@@ -1,4 +1,4 @@
-import os, time, subprocess
+import os, time, subprocess, re
 from colorama import Fore
 
 PATH = os.path.dirname(os.path.abspath(__file__))
@@ -47,14 +47,35 @@ def art():
 def despedida():
     print("\n� Thanks for using Talus!\n")
 
+def pedir_palabra(mensaje):
+    while True:
+        entrada = input(mensaje)
+        if entrada.isalpha():
+            return entrada
+        print(f"{Fore.RED}[X]{Fore.RESET} Only words permitted. Try again")
+
+def pedir_numero(mensaje):
+    while True:
+        entrada = input(mensaje)
+        if entrada.isdigit():
+            return entrada
+        print(f"{Fore.RED}[X]{Fore.RESET} Only numbers permitted. Try again.")
+
+def pedir_simbolos(mensaje):
+    while True:
+        entrada = input(mensaje)
+        if re.fullmatch(r"[^\w\s]+", entrada):  # Solo símbolos, no letras ni números ni espacios
+            return entrada
+        print(f"{Fore.RED}[X]{Fore.RESET} Only symbols permitted. Try again.")
+
 def permutations(): # 1. GENERATE WORDLIST
     wordlist_name = input("[-] Enter the name of your '.txt' wordlist: ")
     print(f"You named your wordlist '{wordlist_name}'")
     wordlist = os.path.join(PATH, wordlist_name+".txt")
     
-    w1 = input("[-] Enter the first data (word, name, object, something): ")
-    w2 = input("[-] Enter the second data (numbers, date, age, time): ")
-    w3 = input("[-] Enter the third data (exta info, special characters, more words or numbers, whatever): ")
+    w1 = pedir_palabra("[-] Enter the first data (a word, name, etc.): ")
+    w2 = pedir_numero("[-] Enter the second data (numbers, date, age, etc.): ")
+    w3 = pedir_simbolos("[-] Enter the third data (symbols only, like !@#): ")
     fw1 = w1+w2+w3
     fw2 = w1+w3+w2
     fw3 = w2+w1+w3
