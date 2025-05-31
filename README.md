@@ -84,5 +84,6 @@ Tested in:
 |**iOS**|✅| Pending|
 <br>
 
+
 >[!IMPORTANT] 
 **I am not responsible for the use that the user gives to the tool and the consequences that this entails.**
