@@ -81,7 +81,7 @@ Tested in:
 |**Linux**|⚠️| Update fails in Kali|
 |**Termux**|✅| Pending tests|
 |**MacOS**|➖| Pending|
-|**iOS**|➖| Pending|
+|**iOS**|✅| Pending|
 <br>
 
 >[!IMPORTANT] 
