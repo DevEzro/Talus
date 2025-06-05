@@ -44,24 +44,24 @@ def art():
       ##%%                                                  
     ''')
 
-def despedida():
+def close_app():
     print("\n� Thanks for using Talus!\n")
 
-def pedir_palabra(mensaje):
+def get_data(mensaje):
     while True:
         entrada = input(mensaje)
         if entrada.isalpha():
             return entrada
         print(f"{Fore.RED}[X]{Fore.RESET} Only words permitted. Try again")
 
-def pedir_numero(mensaje):
+def get_number(mensaje):
     while True:
         entrada = input(mensaje)
         if entrada.isdigit():
             return entrada
         print(f"{Fore.RED}[X]{Fore.RESET} Only numbers permitted. Try again.")
 
-def pedir_simbolos(mensaje):
+def get_symbols(mensaje):
     while True:
         entrada = input(mensaje)
         if re.fullmatch(r"[^\w\s]+", entrada):  # Solo símbolos, no letras ni números ni espacios
@@ -73,9 +73,9 @@ def permutations(): # 1. GENERATE WORDLIST
     print(f"You named your wordlist '{wordlist_name}'")
     wordlist = os.path.join(PATH, wordlist_name+".txt")
     
-    w1 = pedir_palabra("[-] Enter the first data (a word, name, etc.): ")
-    w2 = pedir_numero("[-] Enter the second data (numbers, date, age, etc.): ")
-    w3 = pedir_simbolos("[-] Enter the third data (symbols only, like !@#): ")
+    w1 = get_data("[-] Enter the first data (a word, name, etc.): ")
+    w2 = get_number("[-] Enter the second data (numbers, date, age, etc.): ")
+    w3 = get_symbols("[-] Enter the third data (symbols only, like !@#): ")
     fw1 = w1+w2+w3
     fw2 = w1+w3+w2
     fw3 = w2+w1+w3
@@ -163,7 +163,7 @@ def print_menu(): # 0. EXIT TALUS
         option = input(Fore.YELLOW + "[-] Select an option above: " + Fore.RESET)
         if option == "0": # Exit
             clear_screen()
-            despedida()
+            close_app()
             exit()
         elif option >= "1" and option <= "3":
             ops(option)
@@ -175,12 +175,9 @@ def print_menu(): # 0. EXIT TALUS
     except KeyboardInterrupt:
         clear_screen()
         print("🚪 Exiting...")
-        despedida()
+        close_app()
         exit(0)
 
-    
-
-        
 def ops(option):
     clear_screen() # Generate wordlist
     if option == "1":
