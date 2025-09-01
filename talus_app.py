@@ -120,35 +120,41 @@ def info(): # 2. ABOUT TALUS
     ''')
     
 def check_updates(): # 3. CHECK UPDATES
+    import sys
     try:
-        subprocess.run(
-            ["git", "fetch", "origin"], 
-            check=True, 
-            stdout=subprocess.DEVNULL,
-            stderr=subprocess.DEVNULL
-        )
-        
+        try:
+            subprocess.run(["git", "--version"], check=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+        except Exception:
+            print(f"{Fore.RED}❌ Git is not installed or not found in PATH.{Fore.RESET}")
+            return
+
+        subprocess.run(["git", "checkout", "main"], check=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+
+        subprocess.run(["git", "fetch", "origin"], check=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+
         local = subprocess.check_output(["git", "rev-parse", "HEAD"]).strip()
         remote = subprocess.check_output(["git", "rev-parse", "origin/main"]).strip()
-        
+
         if local != remote:
             print(f"{Fore.CYAN}⭐ New update available.{Fore.RESET}")
             answer = input("⬇️ Do you want to install the update? (y/n): ").strip().lower()
             if answer == "y":
                 print(f"{Fore.CYAN}🔄 Updating Talus...{Fore.RESET}")
-                subprocess.run(
-                    ["git", "pull", "origin", "main"], 
-                    check=True,
-                    stdout=subprocess.DEVNULL,
-                    stderr=subprocess.DEVNULL
-                )
-                print(f"{Fore.GREEN}✅ Repository update sucessful.{Fore.RESET}")
+                try:
+                    subprocess.run(["git", "pull", "origin", "main"], check=True)
+                    print(f"{Fore.GREEN}✅ Repository update successful. Restarting...{Fore.RESET}")
+                    time.sleep(1)
+                    os.execv(sys.executable, [sys.executable] + sys.argv)
+                except subprocess.CalledProcessError as e:
+                    print(f"{Fore.RED}❌ Error during update: {e}{Fore.RESET}")
             else:
                 print(f"{Fore.RED}❌ Update has been canceled.{Fore.RESET}")
         else:
             print(f"{Fore.CYAN}🆗 No updates available.{Fore.RESET}")
     except subprocess.CalledProcessError as e:
         print(f"{Fore.RED}❌ Error while checking updates: {e}{Fore.RESET}")
+    except Exception as e:
+        print(f"{Fore.RED}❌ Unexpected error: {e}{Fore.RESET}")
 
 def print_menu(): # 0. EXIT TALUS
     try:
