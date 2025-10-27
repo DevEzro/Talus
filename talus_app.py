@@ -45,7 +45,7 @@ def art():
     ''')
 
 def close_app():
-    print("\n� Thanks for using Talus!\n")
+    print("\n🤗 Thanks for using Talus!\n")
 
 def get_data(mensaje):
     while True:
