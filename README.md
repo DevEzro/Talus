@@ -46,7 +46,7 @@ Tested in:
 |SYSTEMS|STATUS|COMMENTS|
 |-------|------|---------|
 |**Windows**|✅|**CORRECT**|
-|**Linux**|⚠️| Update fails in Kali|
+|**Linux**|➖| More tests needed|
 |**Termux**|✅|**CORRECT**|
 |**MacOS**|➖| Pending|
 |**iOS**|✅| Pending|
