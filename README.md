@@ -46,10 +46,10 @@ Tested in:
 |SYSTEMS|STATUS|COMMENTS|
 |-------|------|---------|
 |**Windows**|✅|**CORRECT**|
-|**Linux**|➖| More tests needed|
+|**Linux**|➖| Update: More tests needed|
 |**Termux**|✅|**CORRECT**|
 |**MacOS**|➖| Pending|
-|**iOS**|✅| Pending|
+|**iOS**|✅| **CORRECT**|
 <br>
 
 
