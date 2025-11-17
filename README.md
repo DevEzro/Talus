@@ -39,6 +39,7 @@ This tool offers various options:
 ```
 git clone https://github.com/DevEzro/Talus
 cd Talus
+pip install -r requirements.txt
 python3 talus_app.py
 ```
 
